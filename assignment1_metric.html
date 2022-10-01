@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--Created by: Jungyu Lee - 301236221 - on May 27, 2022-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 - BMR Calculator</title>
+    <link rel="stylesheet" href="assignment1.css">
+</head>
+<body>
+    <div class="bmr-calculator">
+        <h2>BMR Calculator</h2>
+        <div>
+            <a href=assignment1_metric.html class="mode">Metric</a>
+            <a href=assignment1.html class="mode">Imperial</a>
+        </div>
+        <div class="controls">
+            <form>                
+                <div class="gender">
+                    <h3>Gender</h3>
+                    <input type="radio" id="male" value="male" name="gender" checked />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" value="female" name="gender" />
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                <h3>Age</h3>
+                <input type="text" id="age" value="32" />
+                </div>
+                <div class="height">
+                    <h3>Height</h3>
+                    <input type="text" id="height" value="178"/>
+                    <div class="unit">cm</div>
+                </div>
+
+                <div class="weight">
+                    <h3>Weight</h3>
+                    <input type="text" id="weight" value="72" />
+                    <div class="unit">kg</div>
+                </div>
+                <div class="activity-level">
+                    <h3>Physical Activity Level</h3>
+                    <div>
+                        <input type="radio" id="sedentary" value="1.2" name="activity-level" checked />
+                        <label for="sedentary">Sedentary (little or no exercise)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="light" value="1.375" name="activity-level" />
+                        <label for="light">Lightly active (light exercise/sports 1-3 days/week)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="moderate" value="1.55" name="activity-level" />
+                        <label for="moderate">Moderately active (moderate exercise/sports 3-5 days/week)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="active" value="1.725" name="activity-level" />
+                        <label for="active">Very active (hard exercise/sports 6-7 days a week)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="physical-job" value="1.9" name="activity-level" />
+                        <label for="physical-job">If you are extra active (very hard exercise/sports & a physical job)</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="result">
+            <button class="calculate-btn">Calculate</button>
+            <div class="result-message">
+                <span class="bmr"></span> 
+            </div>
+            <div class="error-message">
+                <p>
+                    Please enter proper numbers!
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="assignment1_metric.js"></script>
+</body>
+</html>

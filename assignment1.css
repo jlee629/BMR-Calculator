@@ -1,0 +1,192 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    background: whitesmoke;
+}
+
+.bmr-calculator {
+    margin-top: 3px;
+    background: #fff;
+    max-width:510px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 24px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 1px gray;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bmr-calculator h2 {
+    text-align: center;
+    background-color: #b76e79;
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 8px;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.bmr-calculator .mode {
+    display:inline-block;
+    width:49%;
+    text-align: center;
+    margin-top: -3px;
+    background-color: rgb(89, 83, 83);
+    text-decoration: none;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    border-radius: 10px;
+}
+
+.bmr-calculator form h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 16px 0 10px 0;
+}
+
+.bmr-calculator form .gender {
+    font-size: 15px;
+    margin-top:3px;
+}
+
+.bmr-calculator form input[type='text'] {
+    width: 100%;
+    padding: 4px 16px;
+    font-size: 15px;
+    border: 1px solid #d5dbdd;
+    border-style:none;
+    border-bottom:solid 2px #cacaca;
+    outline: none;
+}
+
+.bmr-calculator form #feet,
+.bmr-calculator form #inches,
+.bmr-calculator form #stones,
+.bmr-calculator form #pounds {
+    width: 49.5%;
+    padding: 4px 16px;
+    font-size: 15px;
+    border: 1px solid #d5dbdd;
+    border-style:none;
+    border-bottom:solid 2px #cacaca;
+}
+
+
+.bmr-calculator form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.bmr-calculator form #female {
+    margin-left: 20px;
+}
+
+
+.bmr-calculator form .height, 
+.bmr-calculator form .weight {
+    position: relative;
+}
+
+.bmr-calculator form .feet, 
+.bmr-calculator form .stones {
+    position: relative;
+}
+
+.bmr-calculator form .unit {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    color: #777;
+}
+
+.bmr-calculator form .feetUnit,
+.bmr-calculator form .stonesUnit
+
+ {
+    position: absolute;
+    right: 53%;
+    top: 50px;
+    color: #777;
+}
+
+.bmr-calculator form .inchesUnit,
+.bmr-calculator form .poundsUnit {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    color: #777;
+}
+
+.bmr-calculator form .activity-level div {
+    display: block;
+    width: 100%;
+    margin-bottom: 4px;
+    font-size:15px;
+}
+
+.bmr-calculator .result .calculate-btn {
+    padding: 8px 24px;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    border: none;
+    background:#b76e79;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.bmr-calculator .result {
+    margin-bottom:20px;
+    text-align: center;
+    color: #b76e79;
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bmr-calculator .result .bmr {
+    color: #222;
+    font-size: 17px;
+    font-weight: 800;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.bmr-calculator form input[type="text"].invalid,
+.bmr-calculator form #feet.invalid,
+.bmr-calculator form #inches.invalid,
+.bmr-calculator form #stones.invalid,
+.bmr-calculator form #pounds.invalid {
+    border-style:none;
+    border-bottom:2px solid red;
+}
+
+.bmr-calculator .result .error-message {
+    color: red;
+    font-size: 14px;
+    display:none;
+}
+
+.bmr-calculator .result .error-message.active {
+    display:block;
+    background: white;
+    color:#b76e79;
+    position: relative;
+    margin-top:-67px;
+    margin-bottom:20px;
+    height:60px;
+    font-size: 25px;
+    line-height: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color:#b76e79;
+    border-width:5px;
+}
